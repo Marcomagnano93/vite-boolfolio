@@ -34,9 +34,20 @@ export default {
     <section class="h-100">
         <div class="container">
           <h2>Progetti:</h2>
-          <ul class="row">
-            <li class="col-4 card" v-for="project in projects">
-                prova
+          <ul class="row gap-3">
+            <li class="card" v-for="project in projects">
+                <div class="card-header">
+                    {{ project.title }}
+                </div>
+                <div class="card-body">
+                  <p>
+                    {{ project.description }}
+                  </p>
+                  <p>
+                    <a :href="project.git">Git Link</a>
+                  </p>
+                    
+                </div>
             </li> 
           </ul>
         </div>
