@@ -14,11 +14,7 @@ export default {
 <template>
 
   <header>
-    <section class="bg-dark">
-      <div class="container py-5 text-center text-white">
-        <h1>HEADER</h1>
-      </div>
-    </section>
+    <h1>Portfolio su vue</h1>
   </header>
 
 </template>
