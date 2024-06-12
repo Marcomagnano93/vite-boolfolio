@@ -11,11 +11,7 @@ export default {
   methods: {
     fetchData() {
 
-      axios.get('http://127.0.0.1:8000/api/projects',{
-        params: {
-
-        }
-      })
+      axios.get('http://127.0.0.1:8000/api/projects')
       .then((res) => {
         console.log(res.data.projects)
         this.projects = res.data.projects
@@ -42,7 +38,9 @@ export default {
                   <p>
                     <a :href="project.git">Git Link</a>
                   </p>
-                    
+                    <p>
+                        
+                    </p>
                 </div>
             </li>
         </ul>
