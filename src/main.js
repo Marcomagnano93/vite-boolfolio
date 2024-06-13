@@ -11,8 +11,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 // import pages route
 import { createRouter, createWebHistory } from 'vue-router'
 import AppHome from './pages/AppHome.vue'
-import AppAbout from './pages/AppPortfolio.vue'
-import AppBlog from './pages/AppContact.vue'
+import AppPortfolio from './pages/AppPortfolio.vue'
+import AppContact from './pages/AppContact.vue'
 
 const router = createRouter({
 	history: createWebHistory(),
