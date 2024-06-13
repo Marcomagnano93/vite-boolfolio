@@ -1,13 +1,11 @@
 <script>
 import { store } from './store.js'
 import AppHeader from './components/AppHeader.vue'
-import AppContent from './components/AppContent.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
   components: {
     AppHeader,
-    AppContent,
     AppFooter,
   },
   data() {
@@ -23,11 +21,13 @@ export default {
 
   <div id="app">
     <AppHeader></AppHeader>
+
     <!-- route -->
-    <RouterView />
+     <main class="h-100">
+          <RouterView />
+    </main>
 
     <AppFooter></AppFooter>
-
   </div>
 
 </template>
@@ -35,4 +35,5 @@ export default {
 <style lang="scss">
 @use './assets/style/general.scss';
 @use 'bootstrap'
+
 </style>
